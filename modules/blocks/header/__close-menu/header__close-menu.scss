@@ -1,0 +1,25 @@
+.header__close-menu {        
+    margin: 0;
+    margin-right: 28.62px;
+    opacity: 0;
+    visibility: hidden;
+    justify-self: flex-end;
+    width: 26px;
+    height: 26px;
+    background-image: url(images/button_close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .header__close-menu{
+        margin-right: calc(23.1px + (28.62 - 23.1) * (100vw - 320px) / (768 - 320));
+    }    
+}
+
+@media screen and (max-width: 320px) {
+    .header__close-menu{
+        margin-right: 23.1px;
+    }    
+}

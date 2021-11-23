@@ -1,0 +1,30 @@
+.header__menu {
+    opacity: 0;
+    visibility: hidden;
+    background-color: red;
+    justify-self: flex-end;
+    margin-right: 34px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: inherit;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .header__menu {        
+        opacity: 1;
+        visibility: visible;      
+        margin-right: calc(20px + (34 - 20) * (100vw - 320px) / (768 - 320)); 
+    }    
+}
+
+
+@media screen and (max-width: 320px){
+    .header__menu {
+        gap: 8px;
+        margin-right: 20px;
+    }
+}

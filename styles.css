@@ -1,0 +1,213 @@
+@import '../../vendor/normalize.css';
+:root {
+  --color-text-primary: #E1FD2C;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/Inter-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/SourceSansPro-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/SourceSansPro-SemiBold") format("ttf");
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  transition: opacity 0.3s ease-out;
+}
+
+.link:hover {
+  opacity: 0.6;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  background-color: transparent;
+}
+
+.page {
+  min-width: 320px;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #191D2C;
+  color: var(--color-text-primary);
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  align-items: center;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.header {
+  margin: 0;
+  padding: 16px 0 16px 0;
+  width: 100%;
+  border-bottom: var(--color-text-primary) 1px solid;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header__links {
+  grid-area: 1/1;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__links {
+    opacity: 0;
+    visibility: hidden;
+    gap: calc(16px + 4 * (100vw - 320px) / (768 - 320));
+    margin-left: calc(20px + (50 - 20) * (100vw - 320px) / (768 - 320));
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__links {
+    gap: 16px;
+    margin-left: 20px;
+  }
+}
+.header__link {
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
+
+.header__logo {
+  display: block;
+  width: 184px;
+  height: 38px;
+  justify-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    width: calc(100px + (184 - 100) * (100vw - 320px) / (768 - 320));
+    height: calc(20px + (38 - 20) * (100vw - 320px) / (768 - 320));
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__logo {
+    width: 100px;
+    height: 20px;
+  }
+}
+.header__menu {
+  opacity: 0;
+  visibility: hidden;
+  background-color: red;
+  justify-self: flex-end;
+  margin-right: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: inherit;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    opacity: 1;
+    visibility: visible;
+    margin-right: calc(20px + (34 - 20) * (100vw - 320px) / (768 - 320));
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__menu {
+    gap: 8px;
+    margin-right: 20px;
+  }
+}
+.header__line {
+  width: 26px;
+  border-bottom: 2px solid var(--color-text-primary);
+}
+
+@media screen and (max-width: 320px) {
+  .header__line {
+    width: calc(20px + (26 - 20) * (100vw - 320px) / (768 - 320));
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__line {
+    width: 20px;
+  }
+}
+.header__item {
+  grid-area: 1/1;
+  align-self: center;
+  transition: opacity 0.3s ease-out;
+}
+
+.header__close-menu {
+  margin: 0;
+  margin-right: 28.62px;
+  opacity: 0;
+  visibility: hidden;
+  justify-self: flex-end;
+  width: 26px;
+  height: 26px;
+  background-image: url(images/button_close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .header__close-menu {
+    margin-right: calc(23.1px + (28.62 - 23.1) * (100vw - 320px) / (768 - 320));
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__close-menu {
+    margin-right: 23.1px;
+  }
+}
+.header__item_active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__item_inactive {
+  opacity: 0;
+  visibility: hidden;
+}/*# sourceMappingURL=styles.css.map */
