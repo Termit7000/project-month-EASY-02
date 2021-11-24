@@ -1,7 +1,7 @@
-@import '../../vendor/normalize.css';
+@import url(vendor/normalize.css);
+@import url(vendor/fonts/fonts.css);
 
 @import '../root/root.scss';
-@import '../../vendor/fonts.scss';
 @import '../list/list.scss';
 @import '../link/link.scss';
 @import '../button/button.scss';
@@ -26,3 +26,15 @@
 @import '../intro/__title/intro__title.scss';
 @import '../intro/__button/intro__button.scss';
 @import '../intro/__main-picture/intro__main-picture.scss';
+
+@import '../details/details.scss';
+@import '../details/__description/details__description.scss';
+@import '../details/__title/details__title.scss';
+@import '../details/__feature/details__feature.scss';
+@import '../details/__subtitle/details__subtitle.scss';
+@import '../details/__list/details__list.scss';
+@import '../details/__list-item/details__list-item.scss';
+@import '../details/__list-item/_type/details__list_type_weakness.scss';
+@import '../details/__list-item/_type/details__list_type_advantage.scss';
+
+

@@ -1,0 +1,21 @@
+.details__description {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 42px;
+    padding: 41px 50px 45px 50px;
+
+    @media screen and (max-width: 1200px) {
+        grid-area: 1 / -1  / 1 / 1;
+        border-bottom: 1px solid;
+    }
+
+    @media screen and (max-width: 500px) {
+        font-size: 16px;
+        line-height: 27px;        
+        padding: 19px 20px 18px 20px;
+    }
+
+}

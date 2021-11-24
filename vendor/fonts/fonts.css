@@ -1,0 +1,23 @@
+@font-face {
+  src:  url('./Inter-Medium.ttf') format('opentype');
+  font-family: 'Inter';
+  font-weight: 500;  
+}
+
+@font-face {
+  src:  url(./SourceSansPro-Light.ttf) format('opentype');  
+  font-family: 'Source Sans Pro';  
+  font-weight: 300;  
+}
+
+@font-face {
+  src:  url(./SourceSansPro-Regular.ttf) format('opentype');
+  font-family: 'Source Sans Pro';  
+  font-weight: 400;    
+}
+
+@font-face {
+  src:  url(./SourceSansPro-SemiBold.ttf) format('opentype');
+  font-family: 'Source Sans Pro';
+  font-weight: 600;  
+}

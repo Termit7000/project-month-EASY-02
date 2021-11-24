@@ -1,0 +1,25 @@
+.details__feature {
+    margin: 0;
+    padding-top: 41px;
+    padding-left: 50px;    
+    border-left: 1px solid;
+
+    @media screen and (max-width: 1200px) {
+        min-height: 506px;
+
+        &:first-of-type {
+            border-left: none;
+        }        
+    }
+
+    @media screen and (max-width: 500px) {
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid;        
+        min-height: 0;/*calc(50px + 450 * (100vw - 320px) / (500 - 320)); */
+        padding-bottom: 20px;     
+        padding-top: 20px;   
+        padding-left: 20px;
+    }
+}
+ 
