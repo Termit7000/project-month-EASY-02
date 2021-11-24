@@ -10,6 +10,11 @@
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
+    transition: opacity .3s ease-out;
+}
+
+.header__close-menu:hover {
+    opacity: .6;
 }
 
 @media screen and (max-width: 768px) {

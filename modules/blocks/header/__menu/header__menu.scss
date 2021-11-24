@@ -1,7 +1,6 @@
 .header__menu {
     opacity: 0;
-    visibility: hidden;
-    background-color: red;
+    visibility: hidden;    
     justify-self: flex-end;
     margin-right: 34px;
 
@@ -11,6 +10,11 @@
     background-color: inherit;
     justify-content: center;
     cursor: pointer;
+    transition: opacity .3s ease-out;
+}
+
+.header__menu:hover {
+    opacity: .6;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,0 +1,39 @@
+.intro__button {    
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;    
+    color: var(---color-text-primary);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 340px;
+    height: 60px;
+
+
+    &:hover {
+        background-color: var(--color-text-primary);
+        color: var(--color-background);
+    }
+
+    @media screen and (max-width: 1200px) {
+        order: 10; 
+        margin-top: 100px;       
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: calc(60px + (100 - 60) * (100vw - 320px) / (768 - 320));
+        width: calc(280px + (340 - 280) * (100vw - 320px) / (768 - 320));
+    }
+    
+    @media screen and (max-width: 320px) {
+        margin-top:60px;
+        width: 280px;
+    }    
+}
