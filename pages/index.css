@@ -25,6 +25,10 @@
   padding: 0;
   border-width: 0;
   background-color: transparent;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: var(--color-text-primary);
+  cursor: pointer;
 }
 
 .page {
@@ -300,10 +304,7 @@
 }
 
 .intro__button {
-  margin: 0;
   margin-top: 60px;
-  padding: 0;
-  color: var(---color-text-primary);
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -311,11 +312,9 @@
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border: 1px solid;
-  box-sizing: border-box;
-  cursor: pointer;
   width: 340px;
   height: 60px;
+  border: 1px solid;
 }
 .intro__button:hover {
   background-color: var(--color-text-primary);
@@ -547,11 +546,12 @@
 
 .gallery__img {
   display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
   /*
-
-  object-fit: contain;
-  object-position: center;    
   //WebKit-based browsers will ignore this.
   width: -moz-available;          
 
@@ -625,4 +625,87 @@
   flex-direction: row;
   gap: 30px;
   align-items: center;
+}
+
+.press {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 500px;
+  border-bottom: 1px solid;
+}
+
+.press__content {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.press__title {
+  margin: 0;
+  padding: 50px 0 0 50px;
+  max-width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 100%;
+  border-right: 1px solid;
+}
+
+.press__subtitle {
+  margin: 0;
+  padding: 0;
+  max-width: 86.11%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.press__accent {
+  font-weight: 400;
+}
+
+.press__controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.press__radio {
+  display: flex;
+  gap: 14px;
+  align-items: flex-end;
+}
+
+.press__button {
+  display: block;
+  width: 110px;
+  line-height: 52px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 100% 100%;
+}
+.press__button:hover {
+  background-color: var(--color-text-primary);
+  color: var(--color-background);
+}
+
+.press__link-select {
+  display: none;
+}
+.press__link-select:checked + .press__radio-label {
+  content: "";
+  background-color: var(--color-text-primary);
+}
+
+.press__radio-label {
+  width: 12px;
+  height: 12px;
+  border-color: var(--color-text-primary);
+  border: 1px solid;
+  border-radius: 100%;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
