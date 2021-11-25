@@ -1,0 +1,27 @@
+.gallery__content {
+    border-right: 1px solid;
+    overflow-x: scroll;
+    
+    scroll-snap-type: x mandatory;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    } 
+
+    @media screen and (max-width: 1200px) {
+        width: calc(100% - 68px);
+        margin-left: 34px;
+        margin-top: 34px;
+        border-right: none;        
+    }
+
+    @media screen and (max-width: 500px) {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-top: 20px;              
+    }
+}

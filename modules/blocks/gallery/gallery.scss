@@ -1,0 +1,10 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid;
+
+    @media screen and (max-width: 1200px) {
+      display: flex; 
+      flex-direction: column;
+    }
+}

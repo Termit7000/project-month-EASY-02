@@ -20,6 +20,10 @@
         padding-bottom: 20px;     
         padding-top: 20px;   
         padding-left: 20px;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
     }
 }
  
