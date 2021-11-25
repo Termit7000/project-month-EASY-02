@@ -1,5 +1,5 @@
-@import url(vendor/normalize.css);
-@import url(vendor/fonts/fonts.css);
+@import '../vendor/normalize.css';
+@import '../vendor/fonts/fonts.css';
 :root {
   --color-text-primary: #E1FD2C;
   --color-background: #191D2C;
@@ -172,7 +172,7 @@
   justify-self: flex-end;
   width: 26px;
   height: 26px;
-  background-image: url(images/button_close.svg);
+  background-image: url(/images/button_close.svg);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -387,12 +387,12 @@
 
 .details__description {
   margin: 0;
-  padding: 0;
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
   line-height: 42px;
   padding: 41px 50px 45px 50px;
+  border-right: 1px solid;
 }
 @media screen and (max-width: 1200px) {
   .details__description {
@@ -408,6 +408,8 @@
     /*padding: 19px 20px 18px 20px; */
     max-width: calc(100% - 40px);
     padding-left: 20px;
+    padding-right: 20px;
+    border-right: none;
   }
 }
 
@@ -421,7 +423,9 @@
   margin: 0;
   padding-top: 41px;
   padding-left: 50px;
-  border-left: 1px solid;
+}
+.details__feature:first-of-type {
+  border-right: 1px solid;
 }
 @media screen and (max-width: 1200px) {
   .details__feature {
@@ -437,13 +441,15 @@
     border-right: none;
     border-bottom: 1px solid;
     min-height: 0;
-    /*calc(50px + 450 * (100vw - 320px) / (500 - 320)); */
     padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 20px;
   }
   .details__feature:last-of-type {
     border-bottom: none;
+  }
+  .details__feature:first-of-type {
+    border-right: none;
   }
 }
 
@@ -541,16 +547,17 @@
 
 .gallery__img {
   display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
   width: 100%;
-  width: -moz-available;
-  /* WebKit-based browsers will ignore this. */
+  /*
+
+  object-fit: contain;
+  object-position: center;    
+  //WebKit-based browsers will ignore this.
+  width: -moz-available;          
+
+  //Mozilla-based browsers will ignore this.
   width: -webkit-fill-available;
-  /* Mozilla-based browsers will ignore this. */
-  width: fill-available;
+  width: fill-available; */
 }
 
 .gallery__caption {
@@ -606,11 +613,11 @@
 }
 
 .gallery__button_type_back {
-  background-image: url(images/icon_arrow_back.svg);
+  background-image: url(/images/icon_arrow_back.svg);
 }
 
 .gallery__button_type_forward {
-  background-image: url(images/icon_arrow_forward.svg);
+  background-image: url(/images/icon_arrow_forward.svg);
 }
 
 .gallery__controls {
@@ -618,4 +625,4 @@
   flex-direction: row;
   gap: 30px;
   align-items: center;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=index.css.map */

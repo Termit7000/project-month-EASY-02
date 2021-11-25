@@ -1,0 +1,52 @@
+@import '../vendor/normalize.css';
+@import '../vendor/fonts/fonts.css';
+
+
+@import '../blocks/root/root.scss';
+
+@import '../blocks/list/list.scss';
+@import '../blocks/link/link.scss';
+@import '../blocks/button/button.scss';
+
+@import '../blocks/page/page.scss';
+@import '../blocks/container/container.scss';
+
+@import '../blocks/header/header.scss';
+@import '../blocks/header/__links/header__links.scss';
+@import '../blocks/header/__link/header__link.scss';
+@import '../blocks/header/__logo/header__logo.scss';
+@import '../blocks/header/__menu/header__menu.scss';
+@import '../blocks/header/__line/header__line.scss';
+@import '../blocks/header/__item/header__item.scss';
+@import '../blocks/header/__close-menu/header__close-menu.scss';
+@import '../blocks/header/__item/_active/header__item_active.scss';
+@import '../blocks/header/__item/_inactive/header__item_inactive.scss';
+
+@import '../blocks/intro/intro.scss';
+@import '../blocks/intro/__content/intro__content.scss';
+@import '../blocks/intro/__text/intro__text.scss';
+@import '../blocks/intro/__title/intro__title.scss';
+@import '../blocks/intro/__button/intro__button.scss';
+@import '../blocks/intro/__main-picture/intro__main-picture.scss';
+
+@import '../blocks/details/details.scss';
+@import '../blocks/details/__description/details__description.scss';
+@import '../blocks/details/__title/details__title.scss';
+@import '../blocks/details/__feature/details__feature.scss';
+@import '../blocks/details/__subtitle/details__subtitle.scss';
+@import '../blocks/details/__list/details__list.scss';
+@import '../blocks/details/__list-item/details__list-item.scss';
+@import '../blocks/details/__list-item/_type/details__list_type_weakness.scss';
+@import '../blocks/details/__list-item/_type/details__list_type_advantage.scss';
+
+@import '../blocks/gallery/gallery.scss';
+@import '../blocks/gallery/__content/gallery__content.scss';
+@import '../blocks/gallery/__photo-list/gallery__photo-list.scss';
+@import '../blocks/gallery/__item/gallety__item.scss';
+@import '../blocks/gallery/__img/gallery__img.scss';
+@import '../blocks/gallery/__caption/gallery__caption.scss';
+@import '../blocks/gallery/__title/gallery__title.scss';
+@import '../blocks/gallery/__button/galery__button.scss';
+@import '../blocks/gallery/__button/_type/gallery__button_type_back.scss';
+@import '../blocks/gallery/__button/_type/gallery__button_type_forward.scss';
+@import '../blocks/gallery/__controls/gallery__controls.scss';

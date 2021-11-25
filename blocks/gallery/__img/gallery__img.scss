@@ -1,0 +1,16 @@
+.gallery__img {
+    display: block;
+    
+
+    width: 100%;
+    /*
+
+    object-fit: contain;
+    object-position: center;    
+    //WebKit-based browsers will ignore this.
+    width: -moz-available;          
+
+    //Mozilla-based browsers will ignore this.
+    width: -webkit-fill-available;
+    width: fill-available; */
+}
