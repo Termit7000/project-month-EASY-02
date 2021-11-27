@@ -62,3 +62,18 @@
 @import '../blocks/press/__link-select/press__link-select.scss';
 @import '../blocks/press/__radio-label/press__radio-label.scss';
 
+@import '../blocks/footer/footer.scss';
+@import '../blocks/footer/__section/footer__section.scss';
+
+@import '../blocks/subscription/subscription.scss';
+@import '../blocks/subscription/__title/subscription__title.scss';
+@import '../blocks/subscription/__subtitle/subsctiption__subtitle.scss';
+@import '../blocks/subscription/__form/subscription__form.scss';
+@import '../blocks/subscription/__input/subscription__input.scss';
+@import '../blocks/subscription/__input/_type/subscription__input_type_surname.scss';
+@import '../blocks/subscription/__input/_type/subscription__input_type_email.scss';
+@import '../blocks/subscription/__submit/subscription__submit.scss';
+
+@import '../blocks/copyright/copyright.scss';
+@import '../blocks/copyright/__text/copuright__text.scss';
+@import '../blocks/copyright/__logo/copyright__logo.scss';

@@ -1,0 +1,25 @@
+.subscription__form {
+    margin: 0;
+    margin-top: auto;
+    padding: 0;
+    display: grid;    
+    
+    border-left: 1px solid;
+    border-top: 1px solid;
+    width: 340px;   
+
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 170px 90px 80px;
+
+    
+    @media screen and (max-width: 768px) {
+        grid-template-columns: calc(140px + 30 * (100vw - 320px) / (768 - 320))  calc(60px + 30 * (100vw - 320px) / (768 - 320)) 80px;        
+        width: calc(280px + (340 - 280) * (100vw - 320px) / (768 - 320));
+    } 
+
+    @media screen and (max-width: 600px) {
+        
+        margin-top: 60px;  
+    }
+}

@@ -7,4 +7,8 @@
     font-size: 46px;
     line-height: 100%;
     border-right: 1px solid;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
 }

@@ -3,4 +3,14 @@
     grid-template-columns: repeat(2, 1fr);
     min-height: 500px;
     border-bottom: 1px solid;
+
+    @media screen and (max-width: 1200px) {
+        display: flex;        
+        flex-direction: column;        
+    }
+
+    @media screen and (max-width: 500px) {
+        min-height: calc(287px + (500 - 387) * (100vw - 320px) / (500 - 320));
+        
+    }
 }

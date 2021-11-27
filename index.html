@@ -111,29 +111,31 @@
             <h2 class="press__title">Пресса</h2>
             <div class="press__content">
                 <p class="press__subtitle"><span class="press__accent"> Engadget: </span>VW’s e-BULLI concept shows how your classic van can become an EV.</p>
-                <div class="press__controls">
-                    
-                    <div class = "press__radio">
-                        <input type="radio" class="press__link-select" id="press_select_1" name="press_select" checked value="1">
-                        <label for="press_select_1" class="press__radio-label"></label>
-                        <input type="radio" class="press__link-select" id="press_select_2" name="press_select" value="2">
-                        <label for="press_select_2" class="press__radio-label"></label>
-                    </div>                   
-
+                <div class="press__controls">                    
+                    <div class = "press__radio"></div>
                     <a target="_blank" href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html" class="button press__button">Читать</a>
                 </div>
-
             </div>
-
         </section>
-
-
     </main>
 
-
     <footer class="footer container">
+        <section class="subscription footer__section">
+            <h2 class="subscription__title">Подписка</h2>
+            <p class="subsctiption__subtitle">На новые спецвыпуски машин.</p>
 
+            <form class="subscription__form">
+                <input type="text" required placeholder="Имя" class="subscription__input subscription__input_type_name" id="subscription_name">
+                <input type="text" required placeholder="Фамилия" class="subscription__input subscription__input_type_surname" id="subscription_surname">
+                <input type="email" required placeholder="Почта" class="subscription__input subscription__input_type_email" id="subscription_email">
+                <input type="submit" class="button subscription__submit" value="Подписка">
+            </form>
+        </section>
 
+        <section class="copyright footer__section">
+            <img src="images/logo.svg" alt="Логотип магазина" class="copyright__logo">
+            <p class="copuright__text">© Auto-Magazine 2021</p>
+        </section>
     </footer>
 
 
