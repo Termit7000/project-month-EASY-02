@@ -6,4 +6,9 @@
 
     display: grid;
     grid-template-columns: 1fr;
+
+    @media screen and (max-width: 500px) {
+        padding-top: 25px;
+        padding-bottom: 25px;        
+    }
 }

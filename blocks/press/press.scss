@@ -1,7 +1,7 @@
 .press {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    min-height: 500px;
+    min-height: 400px;
     border-bottom: 1px solid;
 
     @media screen and (max-width: 1200px) {
@@ -10,7 +10,7 @@
     }
 
     @media screen and (max-width: 500px) {
-        min-height: calc(287px + (500 - 387) * (100vw - 320px) / (500 - 320));
+        min-height: calc(246px + (400 - 246) * (100vw - 320px) / (400 - 320));
         
     }
 }

@@ -1,6 +1,6 @@
 .header__close-menu {        
     margin: 0;
-    margin-right: 28.62px;
+    margin-right: 34px;
     opacity: 0;
     visibility: hidden;
     justify-self: flex-end;
@@ -19,12 +19,12 @@
 
 @media screen and (max-width: 768px) {
     .header__close-menu{
-        margin-right: calc(23.1px + (28.62 - 23.1) * (100vw - 320px) / (768 - 320));
+        margin-right: calc(12px + (12 - 20) * (100vw - 320px) / (768 - 320));
     }    
 }
 
 @media screen and (max-width: 320px) {
     .header__close-menu{
-        margin-right: 23.1px;
+        margin-right: 12px;
     }    
 }
