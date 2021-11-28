@@ -19,12 +19,12 @@
 
 @media screen and (max-width: 768px) {
     .header__close-menu{
-        margin-right: calc(12px + (12 - 20) * (100vw - 320px) / (768 - 320));
+        margin-right: calc(20px + (34 - 20) * (100vw - 320px) / (768 - 320));
     }    
 }
 
 @media screen and (max-width: 320px) {
     .header__close-menu{
-        margin-right: 12px;
+        margin-right: 20px;
     }    
 }
