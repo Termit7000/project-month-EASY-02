@@ -183,7 +183,7 @@
   justify-self: flex-end;
   width: 26px;
   height: 26px;
-  background-image: url(/images/button_close.svg);
+  background-image: url(../images/button_close.png);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -314,6 +314,7 @@
 }
 
 .intro__button {
+  display: block;
   margin-top: 60px;
   font-style: normal;
   font-weight: normal;
@@ -629,11 +630,11 @@
 }
 
 .gallery__button_type_back {
-  background-image: url(/images/icon_arrow_back.svg);
+  background-image: url(../images/icon_arrow_back.png);
 }
 
 .gallery__button_type_forward {
-  background-image: url(/images/icon_arrow_forward.svg);
+  background-image: url(../images/icon_arrow_forward.png);
 }
 
 .gallery__controls {
