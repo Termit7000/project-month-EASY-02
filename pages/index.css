@@ -630,11 +630,11 @@
 }
 
 .gallery__button_type_back {
-  background-image: url(../images/icon_arrow_back.png);
+  background-image: url(../images/icon_arrow_back.svg);
 }
 
 .gallery__button_type_forward {
-  background-image: url(../images/icon_arrow_forward.png);
+  background-image: url(../images/icon_arrow_forward.svg);
 }
 
 .gallery__controls {
