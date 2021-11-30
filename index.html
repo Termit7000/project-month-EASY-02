@@ -1,15 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Учебный проект Яндекс.Практикум 4 спринт">    
-    <meta name="author" content="Иванов Сергей">    
+    <meta name="description" content="Учебный проект Яндекс.Практикум 4 спринт">
+    <meta name="author" content="Иванов Сергей">
     <title>AUTO-MAGAZINE</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages/index.css">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 </head>
-<body>
-    
+
+<body class="page">
+
+    <header class="header container">
+
+        <nav class="header__item">
+            <ul class="list header__links">
+                <li> <a href="#details" class="header__link link">Факты</a> </li>
+                <li> <a href="#gallery" class="header__link link">Галерея</a> </li>
+                <li> <a href="#press" class="header__link link">Пресса</a> </li>
+            </ul>
+        </nav>
+
+        <img src="./images/logo.svg" alt="Логотип" class="header__item header__logo">
+
+        <button type="button" class="button header__item header__menu">
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+        </button>
+
+        <button type="button" class="button header__item  header__close-menu"></button>
+    </header>
+
+    <main class="content container">
+        <section class="intro">
+            <div class="intro__content">
+                <p class="intro__text">volkswagen T1</p>
+                <h1 class="intro__title">Новая версия популярного микроавтобуса</h1>
+                <p class="intro__text">с электродвигателем</p>
+                <a href="" target="_self" class="button intro__button">Подробнее</a>
+            </div>
+            <img src="images/intro_main-theme.jpg" alt="Общий вид автомобиля" class="intro__main-picture">
+        </section>
+
+        <section class="details" id="details" aria-label="Описание автомобиля">
+
+
+            <p class="details__description"> <span class="details__title">VW T1 Electro: </span>
+                Отделение Volkswagen Commercial Vehicles представило концепт e-Bulli: классический вэн T1 1966 года
+                с электрической силовой установкой.
+                По словам производителя, проект получит коммерческое продолжение, и через фирму-партнера eClassics
+                наборы для конверсии микроавтобусов в электрокары
+                и уже готовые машины будут продавать частным клиентам.
+            </p>
+
+            <div class="details__feature">
+                <p class="details__subtitle">Плюсы</p>
+                <ul class="list details__list details__list_type_advantage">
+                    <li class="details__list-item">Экологичный</li>
+                    <li class="details__list-item">Экономный</li>
+                    <li class="details__list-item">Тихий</li>
+                </ul>
+            </div>
+
+
+            <div class="details__feature">
+                <p class="details__subtitle">Минусы</p>
+                <ul class="list details__list details__list_type_weakness">
+                    <li class="details__list-item">Дорогой</li>
+                    <li class="details__list-item">Подзарядка</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            
+            <ul class="gallery__content gallery__photo-list list">
+
+                <li class="gallery__item">
+                    <img class="gallery__img" src="images/gallery__main.jpg" alt="Общий вид автомобиля">
+                </li>
+
+                <li class="gallery__item">
+                    <img class="gallery__img" src="images/gallery__drivers_seat.jpg" alt="Место водителя">
+                </li>
+
+                <li class="gallery__item">
+                    <img class="gallery__img" src="images/gallery__salon.jpg" alt="Вид салона автомобиля">
+                </li>
+            </ul>
+
+            <div class="gallery__caption">
+                <h2 class="gallery__title">Галерея</h2>
+                <div class="gallery__controls">
+                    <button type="button" class="button gallery__button gallery__button_type_back"></button>
+                    <button type="button" class="button gallery__button gallery__button_type_forward"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="press" id="press" aria-label="Пресса">
+            <h2 class="press__title">Пресса</h2>
+            <div class="press__content">
+                <p class="press__subtitle"><span class="press__accent"> Engadget: </span>VW’s e-BULLI concept shows how
+                    your classic van can become an EV.</p>
+                <div class="press__controls">
+                    <div class="press__radio"></div>
+                    <a target="_blank"
+                        href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html"
+                        class="button press__button">Читать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <section class="subscription footer__section">
+            <h2 class="subscription__title">Подписка</h2>
+            <p class="subscription__subtitle">На новые спецвыпуски машин.</p>
+
+            <form name="subscription" class="subscription__form">
+                <input type="text" required placeholder="Имя" class="subscription__input subscription__input_type_name"
+                    id="subscription_name" name="subscription_name">
+                <input type="text" required placeholder="Фамилия"
+                    class="subscription__input subscription__input_type_surname" id="subscription_surname"
+                    name="subscription_surname">
+                <input type="email" required placeholder="Почта"
+                    class="subscription__input subscription__input_type_email" id="subscription_email"
+                    name="subscription_email">
+                <input type="submit" class="button subscription__submit" value="Подписка">
+            </form>
+        </section>
+
+        <section class="copyright footer__section" aria-label="Права и ответственность">
+            <img src="images/logo.svg" alt="Логотип магазина" class="copyright__logo">
+            <p class="copyright__text">© Auto-Magazine 2021</p>
+        </section>
+    </footer>
+
+
+    <script src="scripts/index.js"></script>
+
 </body>
+
 </html>

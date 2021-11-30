@@ -1,0 +1,12 @@
+.press__content {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: inherit;
+
+    @media screen and (max-width: 500px) {
+        padding: 20px;
+        max-width: 87.5%;        
+    }
+}

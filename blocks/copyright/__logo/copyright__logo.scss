@@ -1,0 +1,11 @@
+.copyright__logo {
+    width: 184px;
+    height: 38px;
+    object-fit: contain;    
+
+    @media screen and (max-width: 600px) { 
+        height: 58px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

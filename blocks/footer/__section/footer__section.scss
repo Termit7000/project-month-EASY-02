@@ -1,0 +1,27 @@
+.footer__section {
+    padding: 50px;
+
+    @media screen and (min-width: 600px) {
+        &:first-of-type {
+            padding-right: 0;
+        }
+    
+        &:last-of-type {
+            padding-left: 0;
+        }
+    }   
+    
+    @media screen and (min-width: 1200px) {
+        &:first-of-type {
+            border-right: 1px solid;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+
+        padding: calc(20px + (50 - 20) * (100vw - 320px) / (768 - 320));     
+        
+        
+    }
+
+}

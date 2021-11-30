@@ -1,0 +1,17 @@
+.subscription__submit {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: var(--color-text-primary);    
+        color: var(--color-background);    
+    }
+}

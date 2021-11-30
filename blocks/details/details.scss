@@ -1,0 +1,15 @@
+.details {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr;        
+    }
+
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;        
+    }
+}

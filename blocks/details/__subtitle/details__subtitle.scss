@@ -1,0 +1,17 @@
+.details__subtitle {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 500px) {
+        font-size: 22px;
+        line-height: 22px;        
+        padding-bottom: 40px;
+    }
+}

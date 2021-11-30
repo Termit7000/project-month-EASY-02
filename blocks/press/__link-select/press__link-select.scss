@@ -1,0 +1,8 @@
+.press__link-select {
+    display: none;
+
+    &:checked + .press__radio-label {
+        content: '';
+        background-color: var(--color-text-primary);        
+    }
+}

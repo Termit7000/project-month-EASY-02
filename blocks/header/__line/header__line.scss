@@ -1,0 +1,16 @@
+.header__line {
+    width: 26px;
+    border-bottom: 2px solid var(--color-text-primary);
+}
+
+@media screen and (max-width: 320px){
+    .header__line {
+        width: calc(20px + (26 - 20) * (100vw - 320px) / (768 - 320));
+    }
+}
+
+@media screen and (max-width: 320px){
+    .header__line {
+        width: 20px;
+    }
+}

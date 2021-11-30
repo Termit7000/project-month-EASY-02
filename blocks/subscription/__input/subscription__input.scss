@@ -1,0 +1,23 @@
+.subscription__input {
+    border: none;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    outline: none;       
+
+    background-color: transparent;
+    color: inherit;
+    padding-left: 11px;
+    
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 32px;
+    cursor: pointer;
+    box-sizing: border-box; 
+
+    &::placeholder {
+        color: inherit;
+    }
+}

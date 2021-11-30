@@ -1,0 +1,5 @@
+.details__list_type_weakness {
+    .details__list-item::before {
+        content: '- ';
+    }
+}

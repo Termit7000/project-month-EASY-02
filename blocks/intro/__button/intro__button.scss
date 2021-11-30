@@ -1,0 +1,35 @@
+.intro__button {        
+    display: block;
+    margin-top: 60px;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 360px;
+    height: 64px;
+    
+    border: 1px solid;
+    
+    &:hover {
+        background-color: var(--color-text-primary);
+        color: var(--color-background);
+    }
+
+    @media screen and (max-width: 1200px) {
+        order: 10; 
+        margin-top: 100px;       
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: calc(60px + (100 - 60) * (100vw - 320px) / (768 - 320));
+        width: calc(280px + (360 - 280) * (100vw - 320px) / (768 - 320));
+    }
+    
+    @media screen and (max-width: 320px) {
+        margin-top:60px;
+        width: 280px;
+    }    
+}

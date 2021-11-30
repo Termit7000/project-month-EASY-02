@@ -1,0 +1,23 @@
+.intro__main-picture {
+    display: block;
+    width: 100%;
+   
+    object-position: center;
+
+    @media screen and (max-width: 1200px) {
+        width: calc(100vw - 68px);      
+        height: calc((100vw - 68px) / 1.3725 ); 
+        
+        margin-top: 100px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: calc(60px + (100 - 60) * (100vw - 320px) / (768 - 320)) ;
+    }
+
+    @media screen and (max-width: 320px) {
+       width: 280px;
+       height: 202px;
+       margin-top: 60px;
+    }    
+}

@@ -1,0 +1,23 @@
+.press__button {    
+    display: block;
+    width: 110px;
+    line-height: 52px;  
+   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;    
+    text-align: center;
+
+    border: 1px solid;
+    border-radius: 100% 100%;
+
+    &:hover {
+        background-color: var(--color-text-primary);
+        color: var(--color-background);
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 88px;
+        line-height: 42px;        
+    }
+}

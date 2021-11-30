@@ -1,0 +1,14 @@
+.press__title {
+    margin: 0;
+    padding: 50px 0 0 50px;
+    max-width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 100%;
+    border-right: 1px solid;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
