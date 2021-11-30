@@ -62,6 +62,11 @@
   padding: 16px 0 16px 0;
   width: 100%;
   border-bottom: var(--color-text-primary) 1px solid;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: inherit;
   display: grid;
   grid-template-columns: 1fr;
 }

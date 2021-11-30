@@ -1,3 +1,5 @@
+const headerSection = document.querySelector('.header');
+
 const buttonCloseMenu = document.querySelector('.header__close-menu');
 const buttonMenuHeader = document.querySelector('.header__menu');
 const linksHeader = document.querySelector('.header__links');
@@ -86,6 +88,23 @@ buttonCloseMenu.addEventListener('click', switchVisibilityHeaderMenu);
 buttonForwardGallery.addEventListener('click', () => scrollGalery(contentGallery.scrollLeft + imgGallery.offsetWidth));
 buttonBackGallery.addEventListener('click', () => scrollGalery(contentGallery.scrollLeft - imgGallery.offsetWidth));
 
+/// Переход по внутренним ссылкам до якоря с учетом смещения от липкого хедера
+Array.from(document.querySelectorAll('.header__link')).forEach(link=>{
+
+    link.anchor = document.getElementById(link.getAttribute('href').substr(1));
+    link.addEventListener('click', (ev)=>{
+        ev.preventDefault();
+        
+        const headerHeight = headerSection.getBoundingClientRect().height;               
+        const offsetAnchor = ev.currentTarget.anchor.getBoundingClientRect().top;
+        const infoY = offsetAnchor - headerHeight + window.scrollY;        
+        
+        window.scrollTo({
+            top: infoY,
+            behavior: "smooth"
+        }); 
+    })
+});
 
 ///INIT DATA
 
@@ -115,6 +134,6 @@ formSubsription.addEventListener('submit', (event)=>{
     if (inputsSubscription.every(el=>el.validity.valid)) {
         event.preventDefault();        
         buttonSubmitSubscription.value = "Готово!";
-    }    
-    
+    }        
 });
+
