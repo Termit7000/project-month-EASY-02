@@ -1,4 +1,36 @@
 .gallery__photo-list {
     display: flex;
     flex-direction: row;       
+
+    border-right: 1px solid;
+    overflow-x: scroll;
+    
+    scroll-snap-type: x mandatory;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    } 
+
+    @media screen and (max-width: 1200px) {
+        height: 510px;
+        margin-left: 34px;
+        margin-top: 34px;
+        margin-right: 34px;
+        border-right: none;        
+    }
+
+    @media screen and (max-width: 768px) {
+        height: calc(203px + (510 - 203) * (100vw - 320px) / (768 - 320));        
+    }
+
+    @media screen and (max-width: 500px) {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-top: 20px;              
+        margin-right: 20px;
+    }
 }

@@ -3,4 +3,10 @@
     flex-direction: row;
     gap: 30px;
     align-items: center;
+
+    @media screen and (max-width: 1200px){        
+        gap: 32px;
+        margin-right: 17px;        
+    }
 }
+
