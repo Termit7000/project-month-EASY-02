@@ -35,18 +35,18 @@
 @import '../blocks/details/__feature/details__feature.scss';
 @import '../blocks/details/__subtitle/details__subtitle.scss';
 @import '../blocks/details/__list/details__list.scss';
+@import '../blocks/details/__list/_type/details__list_type_advantage.scss';
+@import '../blocks/details/__list/_type/details__list_type_weakness.scss';
 @import '../blocks/details/__list-item/details__list-item.scss';
-@import '../blocks/details/__list-item/_type/details__list_type_weakness.scss';
-@import '../blocks/details/__list-item/_type/details__list_type_advantage.scss';
 
 @import '../blocks/gallery/gallery.scss';
 @import '../blocks/gallery/__content/gallery__content.scss';
 @import '../blocks/gallery/__photo-list/gallery__photo-list.scss';
-@import '../blocks/gallery/__item/gallety__item.scss';
+@import '../blocks/gallery/__item/gallery__item.scss';
 @import '../blocks/gallery/__img/gallery__img.scss';
 @import '../blocks/gallery/__caption/gallery__caption.scss';
 @import '../blocks/gallery/__title/gallery__title.scss';
-@import '../blocks/gallery/__button/galery__button.scss';
+@import '../blocks/gallery/__button/gallery__button.scss';
 @import '../blocks/gallery/__button/_type/gallery__button_type_back.scss';
 @import '../blocks/gallery/__button/_type/gallery__button_type_forward.scss';
 @import '../blocks/gallery/__controls/gallery__controls.scss';
@@ -67,7 +67,7 @@
 
 @import '../blocks/subscription/subscription.scss';
 @import '../blocks/subscription/__title/subscription__title.scss';
-@import '../blocks/subscription/__subtitle/subsctiption__subtitle.scss';
+@import '../blocks/subscription/__subtitle/subscription__subtitle.scss';
 @import '../blocks/subscription/__form/subscription__form.scss';
 @import '../blocks/subscription/__input/subscription__input.scss';
 @import '../blocks/subscription/__input/_type/subscription__input_type_surname.scss';
@@ -75,5 +75,5 @@
 @import '../blocks/subscription/__submit/subscription__submit.scss';
 
 @import '../blocks/copyright/copyright.scss';
-@import '../blocks/copyright/__text/copuright__text.scss';
+@import '../blocks/copyright/__text/copyright__text.scss';
 @import '../blocks/copyright/__logo/copyright__logo.scss';
